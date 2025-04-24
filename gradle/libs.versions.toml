@@ -1,0 +1,16 @@
+[versions]
+agp = "8.2.0"
+dokka = "2.0.0"
+kotlin = "1.9.22"
+napier = "2.7.1"
+
+[libraries]
+napierLogging = { module = "io.github.aakira:napier", version.ref = "napier" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }

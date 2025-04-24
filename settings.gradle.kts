@@ -27,7 +27,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 
-
 }
 
 include(":core")

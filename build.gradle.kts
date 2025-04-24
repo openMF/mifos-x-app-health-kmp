@@ -1,8 +1,8 @@
-// Root build.gradle.kts
 
 plugins {
-    kotlin("multiplatform") version "1.9.22" apply false
-    id("com.android.application") version "8.2.0" apply false
-    id("com.android.library") version "8.2.0" apply false
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.kotlinMultiplatform) apply false
+    alias(libs.plugins.kotlinAndroid) apply false
 }
 

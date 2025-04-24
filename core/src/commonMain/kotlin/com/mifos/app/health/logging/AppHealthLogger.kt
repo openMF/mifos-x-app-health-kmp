@@ -1,14 +1,14 @@
 package com.mifos.app.health.logging
 
-import com.diamondedge.logging.KmLogging
+import io.github.aakira.napier.Napier
 
 private const val TAG = "AppHealthLogger"
 
 object AppHealthLogger {
-    private val logger = KmLogging
+    private val logger = Napier
 
-    fun debug(message: String) = logger.debug(TAG,message)
-    fun info(message: String) = logger.info(TAG,message)
-    fun warning(message: String) = logger.warn(TAG,message)
-    fun error(message: String, throwable: Throwable? = null) = logger.error(TAG, message, throwable)
+    fun debug(message: String, throwable: Throwable? = null) = logger.d(tag = TAG, message = message, throwable = throwable)
+    fun info(message: String, throwable: Throwable? = null) = logger.i(tag = TAG, message = message, throwable = throwable)
+    fun warning(message: String, throwable: Throwable? = null) = logger.w(tag = TAG, message = message, throwable = throwable)
+    fun error(message: String, throwable: Throwable? = null) = logger.e(tag = TAG, message = message, throwable = throwable)
 }
