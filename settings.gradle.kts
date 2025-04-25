@@ -29,8 +29,14 @@ dependencyResolutionManagement {
 
 }
 
-include(":core")
+include(":core:analytics")
+include(":core:code_analysis")
+include(":core:crash_analysis")
+include(":core:logging")
+include(":core:performance")
+
 include(":examples:androidApp")
 include(":examples:desktopApp")
 include(":examples:iosApp")
 include(":examples:webApp")
+include(":core:analytics")

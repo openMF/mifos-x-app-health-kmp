@@ -3,9 +3,17 @@ agp = "8.2.0"
 dokka = "2.0.0"
 kotlin = "1.9.22"
 napier = "2.7.1"
+junit = "4.13.2"
+runner = "1.0.2"
+espressoCore = "3.0.2"
+appcompatV7 = "28.0.0"
 
 [libraries]
 napierLogging = { module = "io.github.aakira:napier", version.ref = "napier" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+runner = { group = "com.android.support.test", name = "runner", version.ref = "runner" }
+espressoCore = { group = "com.android.support.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompatV7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompatV7" }
 
 
 [plugins]
