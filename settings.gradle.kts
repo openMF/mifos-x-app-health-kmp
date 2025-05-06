@@ -2,6 +2,7 @@ rootProject.name = "app-health-kmp"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             mavenContent {
@@ -29,11 +30,12 @@ dependencyResolutionManagement {
 
 }
 
-include(":core:analytics")
-include(":core:code_analysis")
-include(":core:crash_analysis")
-include(":core:logging")
-include(":core:performance")
+include(":core:app-health-analytics")
+include(":core:app-health-codeanalysis")
+include(":core:app-health-crashanalysis")
+include(":core:app-health-logging")
+include(":core:app-health-performance")
 
 include(":app-health")
 include(":sample:composeApp")
+

@@ -21,5 +21,5 @@ kotlin {
 }
 
 android {
-    namespace = "com.mifos.app.health.core.analytics"
+    namespace = "com.mifos.app.health.app-health-analytics"
 }

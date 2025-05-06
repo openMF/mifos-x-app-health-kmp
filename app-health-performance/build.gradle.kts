@@ -21,5 +21,5 @@ kotlin {
 }
 
 android {
-    namespace = "com.mifos.app.health.core.crash_analysis"
+    namespace = "com.mifos.app.health.app-health-performance"
 }

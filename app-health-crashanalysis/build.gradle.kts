@@ -15,11 +15,11 @@ kotlin {
     }
     sourceSets {
         commonMain.dependencies {
-            implementation(libs.napierLogging)
+
         }
     }
 }
 
 android {
-    namespace = "com.mifos.app.health.core.logging"
+    namespace = "com.mifos.app.health.app-health-crashanalysis"
 }

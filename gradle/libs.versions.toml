@@ -1,7 +1,7 @@
 [versions]
-agp = "8.2.0"
+agp = "8.2.2"
 dokka = "2.0.0"
-kotlin = "1.9.22"
+kotlin = "2.1.20"
 napier = "2.7.1"
 junit = "4.13.2"
 runner = "1.0.2"
@@ -12,18 +12,14 @@ android-compileSdk = "35"
 androidMavenGradlePlugin = "2.1"
 coreKtxVersion = "1.13.1"
 espressoCoreVersion = "3.6.0-alpha01"
-gradle = "8.3.2"
 hiltCompiler = "2.48.1"
 hiltNavigationComposeVersion = "1.2.0"
 androidx-activityCompose = "1.10.1"
-kotlinStdlibJdk8 = "1.7.20"
 androidx-lifecycle = "2.8.4"
 multiplatformSettings = "1.2.0"
 navigationCompose = "2.7.7"
 navigationComposeVersion = "2.7.0-alpha07"
-dagger-hilt = "2.48.1"
 biometricKtx = "1.1.0"
-devToolsKsp = "2.0.10-1.0.24"
 material = "1.6.0"
 extJunit = "1.1.5"
 lifecycleRuntimeKtx = "2.8.7"
@@ -37,11 +33,29 @@ monitor = "1.6.1"
 runnerVersion = "1.5.2"
 compose-multiplatform = "1.7.3"
 kotlinx-coroutines = "1.10.1"
+androidRunner = "1.0.2"
+ksp = "2.1.0-1.0.29"
+ktlint = "12.1.1"
+detekt = "1.23.7"
+spotlessVersion = "6.25.0"
+truth = "1.4.4"
+androidTools = "31.7.2"
 
 [libraries]
 napierLogging = { module = "io.github.aakira:napier", version.ref = "napier" }
 espressoCore = { group = "com.android.support.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompatV7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompatV7" }
+
+
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+ktlint-gradlePlugin = { group = "org.jlleitschuh.gradle", name = "ktlint-gradle", version.ref = "ktlint" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+detekt-formatting = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+spotless-gradle = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotlessVersion" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+detekt-gradlePlugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
 
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 android-maven-gradle-plugin = { module = "com.github.dcendents:android-maven-gradle-plugin", version.ref = "androidMavenGradlePlugin" }
@@ -54,7 +68,6 @@ androidx-material-icons-extended = { module = "androidx.compose.material:materia
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
-gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
 multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettings" }
 kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin" }
@@ -75,6 +88,7 @@ runner = { group = "androidx.test", name = "runner", version.ref = "runnerVersio
 androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+test-runner = { group = "com.android.support.test", name = "runner", version.ref = "androidRunner" }
 
 
 [plugins]
