@@ -3,6 +3,12 @@ plugins {
     alias(libs.plugins.android.library)
 }
 
+kotlin {
+    sourceSets {
+        commonMain.dependencies { }
+    }
+}
+
 android {
     namespace = "com.mifos.app.health.app-health-performance"
 }
