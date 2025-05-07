@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "com.mifos.app.common"
+    namespace = "com.mifos.app.health.app-health-crashlytics"
 }
