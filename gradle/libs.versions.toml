@@ -1,0 +1,101 @@
+[versions]
+agp = "8.2.2"
+dokka = "2.0.0"
+kotlin = "2.1.20"
+napier = "2.7.1"
+junit = "4.13.2"
+runner = "1.0.2"
+espressoCore = "3.0.2"
+appcompatV7 = "28.0.0"
+android-minSdk = "24"
+android-compileSdk = "35"
+androidMavenGradlePlugin = "2.1"
+coreKtxVersion = "1.13.1"
+espressoCoreVersion = "3.6.0-alpha01"
+hiltCompiler = "2.48.1"
+hiltNavigationComposeVersion = "1.2.0"
+androidx-activityCompose = "1.10.1"
+androidx-lifecycle = "2.8.4"
+multiplatformSettings = "1.2.0"
+navigationCompose = "2.7.7"
+navigationComposeVersion = "2.7.0-alpha07"
+biometricKtx = "1.1.0"
+material = "1.6.0"
+extJunit = "1.1.5"
+lifecycleRuntimeKtx = "2.8.7"
+composeBom = "2023.03.00"
+hiltAndroid = "2.48.1"
+uiToolingPreviewAndroid = "1.6.8"
+uiAndroid = "1.6.8"
+appcompatVersion = "1.7.0"
+testng = "6.9.6"
+monitor = "1.6.1"
+runnerVersion = "1.5.2"
+compose-multiplatform = "1.7.3"
+kotlinx-coroutines = "1.10.1"
+androidRunner = "1.0.2"
+ksp = "2.1.0-1.0.29"
+ktlint = "12.1.1"
+detekt = "1.23.7"
+spotlessVersion = "6.25.0"
+truth = "1.4.4"
+androidTools = "31.7.2"
+
+[libraries]
+napierLogging = { module = "io.github.aakira:napier", version.ref = "napier" }
+espressoCore = { group = "com.android.support.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompatV7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompatV7" }
+
+
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+ktlint-gradlePlugin = { group = "org.jlleitschuh.gradle", name = "ktlint-gradle", version.ref = "ktlint" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+detekt-formatting = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+spotless-gradle = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotlessVersion" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+detekt-gradlePlugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+android-maven-gradle-plugin = { module = "com.github.dcendents:android-maven-gradle-plugin", version.ref = "androidMavenGradlePlugin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-biometric = { module = "androidx.biometric:biometric", version.ref = "biometricKtx" }
+androidx-core-ktx-v1131 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-hilt-navigation-compose-v120 = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationComposeVersion" }
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
+multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettings" }
+kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationComposeVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "extJunit" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
+androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "uiToolingPreviewAndroid" }
+androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
+testng = { group = "org.testng", name = "testng", version.ref = "testng" }
+androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
+runner = { group = "androidx.test", name = "runner", version.ref = "runnerVersion" }
+
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+test-runner = { group = "com.android.support.test", name = "runner", version.ref = "androidRunner" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+kmp-library-convention = { id = "apphealth.kmp.library", version = "unspecified" }
