@@ -30,12 +30,11 @@ dependencyResolutionManagement {
 
 }
 
-include(":core:app-health-analytics")
-include(":core:app-health-codeanalysis")
-include(":core:app-health-crashlytics")
-include(":core:app-health-logging")
-include(":core:app-health-performance")
-
+include(":app-health-analytics")
+include(":app-health-crashlytics")
+include(":app-health-logging")
+include(":app-health-performance")
+include(":common")
 include(":app-health")
 include(":sample:composeApp")
 
